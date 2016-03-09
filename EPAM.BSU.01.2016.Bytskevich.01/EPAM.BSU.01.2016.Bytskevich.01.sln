@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GettingNthRoot", "GettingNthRoot\GettingNthRoot.csproj", "{4FA2F659-8F7D-46E0-9BD0-FD6A6F6452E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestingConsoleApp", "TestingConsoleApp\TestingConsoleApp.csproj", "{D0E2F965-A019-43ED-A356-F6BF613F1B59}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JaggedArrayBubbleSort", "JaggedArraySorter\JaggedArrayBubbleSort.csproj", "{F17FF496-9896-4D95-903D-740E0E44C9DB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4FA2F659-8F7D-46E0-9BD0-FD6A6F6452E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FA2F659-8F7D-46E0-9BD0-FD6A6F6452E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FA2F659-8F7D-46E0-9BD0-FD6A6F6452E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FA2F659-8F7D-46E0-9BD0-FD6A6F6452E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0E2F965-A019-43ED-A356-F6BF613F1B59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0E2F965-A019-43ED-A356-F6BF613F1B59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0E2F965-A019-43ED-A356-F6BF613F1B59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0E2F965-A019-43ED-A356-F6BF613F1B59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F17FF496-9896-4D95-903D-740E0E44C9DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F17FF496-9896-4D95-903D-740E0E44C9DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F17FF496-9896-4D95-903D-740E0E44C9DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F17FF496-9896-4D95-903D-740E0E44C9DB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
