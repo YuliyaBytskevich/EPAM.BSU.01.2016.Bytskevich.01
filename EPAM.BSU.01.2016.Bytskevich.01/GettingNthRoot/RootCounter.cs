@@ -6,28 +6,23 @@ using System.Threading.Tasks;
 
 namespace GettingNthRoot
 {
-    public class RootCounter
+    public static class RootCounter
     {
-        public int num;
-        public double GetRoot(double number, int degree, double requiredAccuracy)
+        public static double GetRoot(double number, int degree, double requiredAccuracy)
         {
+            if (number < 0)
+                throw new ArgumentException("First argument (number) must be positive");
+            else if (requiredAccuracy < 0)
+                throw new ArgumentException("Third argument (required accuracy) must be positive");
             double result = number;
             double accuracy = 1;
-            double currentValue = 0;   num = 0;
-            while (accuracy > requiredAccuracy)
+            double currentValue = 0;  
+            while (accuracy >= requiredAccuracy)
             {
-                currentValue = ((degree - 1) * result + number / Exponentation(result, degree - 1)) / degree;
+                currentValue = ((degree - 1) * result + number / Math.Pow(result, degree - 1)) / degree;
                 accuracy = Math.Abs(result - currentValue);
-                result = currentValue;  num++;
+                result = currentValue; 
             }
-            return result;
-        }
-
-        private double Exponentation(double x, int n)
-        {
-            double result = x;
-            for (int i = 1; i < n; i++)
-                result = result * x;
             return result;
         }
 
