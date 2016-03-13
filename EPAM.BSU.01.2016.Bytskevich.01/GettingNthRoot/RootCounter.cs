@@ -10,10 +10,18 @@ namespace GettingNthRoot
     {
         public static double GetRoot(double number, int degree, double requiredAccuracy)
         {
-            if (number < 0)
+            if (number <= 0)
                 throw new ArgumentException("First argument (number) must be positive");
             else if (requiredAccuracy < 0)
-                throw new ArgumentException("Third argument (required accuracy) must be positive");
+                throw new ArgumentException("Third argument (required accuracy) must not be negative");
+            bool degreeIsNegative = false;
+            if (degree < 0)
+            {
+                degreeIsNegative = true;
+                degree = -degree;
+            }
+            else if (degree == 0)
+                throw new ArgumentException("Second argument (degree) must not be 0");
             double result = number;
             double accuracy = 1;
             double currentValue = 0;  
@@ -23,7 +31,10 @@ namespace GettingNthRoot
                 accuracy = Math.Abs(result - currentValue);
                 result = currentValue; 
             }
-            return result;
+            if (!degreeIsNegative)
+                return result;
+            else
+                return 1d / result;
         }
 
     }
