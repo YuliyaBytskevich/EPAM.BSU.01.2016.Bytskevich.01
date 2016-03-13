@@ -23,9 +23,9 @@ namespace GettingNthRootTests
         {
             int degree = -5;
             double arrangeRoot = 12345;
-            double number = 1d / Math.Pow(arrangeRoot, -degree);         
-            double actRoot = RootCounter.GetRoot(number, degree, 0.00000000000000000000000000000001);
-            Assert.AreEqual(arrangeRoot, Math.Round(actRoot, 10));
+            double number = Math.Pow(arrangeRoot, degree);         
+            double actRoot = RootCounter.GetRoot(number, degree, 0.0000000001);
+            Assert.AreEqual(arrangeRoot, actRoot);
         }
 
         [TestMethod]
@@ -43,9 +43,9 @@ namespace GettingNthRootTests
         {
             int degree = -5;
             double arrangeRoot = 0.1122334455;
-            double number = 1d / Math.Pow(arrangeRoot, -degree);
-            double actRoot = RootCounter.GetRoot(number, degree, 0.00000000000000000000000000000001);
-            Assert.AreEqual(arrangeRoot, Math.Round(actRoot, 10));
+            double number = Math.Pow(arrangeRoot, -degree);
+            double actRoot = RootCounter.GetRoot(number, degree, 0.0000000001);
+            Assert.AreEqual(arrangeRoot, actRoot, 10);
         }
 
         [TestMethod]

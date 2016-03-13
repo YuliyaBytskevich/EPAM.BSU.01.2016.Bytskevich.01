@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JaggedArrayBubbleSort", "Ja
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GettingNthRootTests", "GettingNthRootTests\GettingNthRootTests.csproj", "{BE07A375-AF00-4CC5-A551-35B7592A6211}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GettingNthRootNUnitTests", "GettingNthRootNUnitTests\GettingNthRootNUnitTests.csproj", "{D1903F94-1287-4112-ADF4-F5B00D41F9C7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{BE07A375-AF00-4CC5-A551-35B7592A6211}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BE07A375-AF00-4CC5-A551-35B7592A6211}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BE07A375-AF00-4CC5-A551-35B7592A6211}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1903F94-1287-4112-ADF4-F5B00D41F9C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1903F94-1287-4112-ADF4-F5B00D41F9C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1903F94-1287-4112-ADF4-F5B00D41F9C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1903F94-1287-4112-ADF4-F5B00D41F9C7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

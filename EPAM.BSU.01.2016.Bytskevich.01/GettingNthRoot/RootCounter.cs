@@ -34,7 +34,7 @@ namespace GettingNthRoot
             if (!degreeIsNegative)
                 return result;
             else
-                return 1d / result;
+                return Math.Round(1d / result, 10);
         }
 
     }
